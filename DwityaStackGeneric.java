@@ -8,10 +8,12 @@ public class DwityaStackGeneric<T> {
 	
 	public boolean isEmpty() {
 		return top == 0;
-		
-	public boolean isFull() {
+        }	
+          
+        public boolean isFull() {
 		return top == dwitya.length;
-	
+        }
+        
 	public void push (T value) {
 		if ( !isFull() ) {
 			dwitya[top] = value;
@@ -25,7 +27,7 @@ public class DwityaStackGeneric<T> {
 		if ( !isEmpty() ) {
 			top = top - 1;
 			T r = dwitya[top];
-			return r;}
+			return r;
 		} else {
 			return null;
 		}
